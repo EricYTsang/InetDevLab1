@@ -10,6 +10,7 @@
 
         echo "hello out there ... i live!!";
 
+        // creating a set of students...
         $students = array();
 
         // adding first student
@@ -35,6 +36,7 @@
         $second->add_grade(50);
         $students["a456"] = $second;
 
+        // adding myself
         $me = new Student();
         $me->surname = "Tsang";
         $me->first_name = "Eric";
@@ -46,8 +48,10 @@
         $me->add_grade(95);
         $students["A00841554"] = $me;
 
+        // sorting students so they show up in the right alphabetical order
         ksort($students);
 
+        // display all the students
         foreach($students as $student)
         {
             echo $student->toString();
