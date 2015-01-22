@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        include('student.php');
+        include('Student.php');
 
         echo "hello out there ... i live!!";
 
